@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<style>
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .responsive-image {
+        width: 47%; /* 调整宽度以适应容器 */
+        height: auto; /* 保持图片比例 */
+        object-fit: contain; /* 确保图片不被拉伸 */
+    }
+</style>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+    <script src="assets/js/addrows.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- HTML Meta Tags -->
+    <title>FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation</title>
+    <meta name="description" content="FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://sled-group.github.io/InfEdit/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation">
+    <meta property="og:description" content="FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation">
+    <meta property="og:image" content="image_assets/method.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="sled-group.github.io">
+    <meta property="twitter:url" content="https://sled-group.github.io/InfEdit/">
+    <meta name="twitter:title" content="FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation">
+    <meta name="twitter:description" content="FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation">
+    <meta name="twitter:image" content="image_assets/method.png">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./assets/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9VZKE74FPW');
+    </script>
+    <title>FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation</title>
+
+    <link href="./assets/css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./assets/css/tab_gallery.css">
+    <!-- <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/academicons.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/juxtapose.css">
+    <link rel="stylesheet" href="./assets/css/image_card_fader.css">
+    <link rel="stylesheet" href="./assets/css/image_card_slider.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia ' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=VT323 ' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display ' rel='stylesheet'>
+
+</head>
+
+
+
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation</h1>
+                        <div class="column has-text-centered">
+                            <p dir="auto"><a href="https://arxiv.org/abs/2410.12266" rel="nofollow"><img src="https://camo.githubusercontent.com/d8617043c5be969759376b28adaf0620c3360f34567782a825b13e9945717a7a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f61725869762d50617065722d253343434f4c4f522533452e737667" alt="arXiv" data-canonical-src="https://img.shields.io/badge/arXiv-Paper-%3CCOLOR%3E.svg" style="max-width: 100%;"></a>
+                                <!-- <a href="https://huggingface.co/datasets/liuhuadai/ZoME-Bench" rel="nofollow"><img src="https://camo.githubusercontent.com/abd4f8cad9643db5d257d7dd5c47b061c6c80fc46d62046aa06a1e53215c5201/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f25463025394625413425393725323048756767696e67253230466163652d626c75653f6c6162656c3d44617461736574" alt="Hugging Face" data-canonical-src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset" style="max-width: 100%;"></a> -->
+                                <a href="https://github.com/liuhuadai/FlashAudio" rel="nofollow"><img src="https://img.shields.io/badge/GitHub-FlashAudio-blue?logo=Github&amp;style=flat-square" alt="githubio" data-canonical-src="https://img.shields.io/badge/GitHub-FlashAudio-blue?logo=Github&amp;style=flat-square" style="max-width: 100%;"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image_assets/structure.png" width="47%" height: auto;>
+                    <img src="./image_assets/rtf-fad.png" width="20%" class="responsive-image">
+                </div>
+                <div class="column has-text-centered link-container" id="blocks">
+                    <div class="publication-links">
+                        <span class="link-block">
+                        <a href="#TTA" class="external-link button is-normal" style="font-size: 14px;width: 33%; background-color: #2780e3; color: aliceblue;">
+                        Text-to-Audio Generation
+                        </a>
+                      </span>
+                        <span class="link-block">
+                        <a href="#Preliminary" class="external-link button is-normal" style="font-size: 14px;width: 33%; color: #3273DC;">
+                        Preliminary Analyses
+                        </a>
+                      </span>
+                        <span class="link-block">
+                        <a href="#Ablation" class="external-link button is-normal" style="font-size: 14px;width: 32%; color: #3273DC;">
+                        Ablation Studies
+                        </a>
+                      </span>
+                        <!-- <span class="link-block">
+                        <a href="./gallery.html#blocks" class="external-link button is-normal" style="width: 24%; color: #3273DC;">
+                          Gallery
+                        </a> -->
+                      </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero is-light is-small" id="TTA" style="text-align: center;">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+                <div class="has-text-justified" style="font-size: 20px;">
+                    <p>
+                        Recent advancements in latent diffusion models (LDMs) have markedly enhanced text-to-audio generation, yet their iterative sampling processes impose substantial computational demands, limiting practical deployment. While recent methods utilizing consistency-based distillation aim to achieve few-step or single-step inference, their one-step performance is constrained by curved trajectories, preventing them from surpassing traditional diffusion models. In this work, we introduce FlashAudio with rectified flows to learn straight flow for fast simulation. To alleviate the inefficient timesteps allocation and suboptimal distribution of noise, FlashAudio optimizes the time distribution of rectified flow with Bifocal Distribution and proposes immiscible flow to minimize the total distance of data-noise pairs in a batch vias assignment. Furthermore, to address the amplified accumulation error caused by the classifier-free guidance (CFG), we propose Anchored Optimization, which refines the guidance scale by anchoring it to a reference trajectory. Experimental results on text-to-audio generation demonstrate that FlashAudio's one-step generation performance surpasses the diffusion-based models with hundreds of sampling steps on audio quality and enables a sampling speed of 400x faster than real-time on a single NVIDIA 4090Ti GPU.
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Performance on text-to-Audio Generation</h2>
+        <!--/ Matting. -->
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Full-step Comparisons</h4>
+        <div id="row1" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <div id="row0ser2"></div>
+        <script>createRowMul("0")</script>
+        <div id="row2ser2"></div>
+        <div id="row1ser2"></div>
+        <script>createRowMul("1")</script>
+        <script>createRowMul("2")</script>
+        <div id="row3ser2"></div>
+        <script>createRowMul("3")</script>
+        <div id="row4ser2"></div>
+        <script>createRowMul("4")</script>
+        <div id="row5ser2"></div>
+        <hr style="margin-top: 20px; margin-bottom: 20px;">
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">One-step Comparisons</h4>
+        <div id="row2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <div id="row4ser3"></div>
+        <div id="row0ser3"></div>
+        <script>createRowFew("0")</script>
+        <div id="row2ser3"></div>
+        <div id="row1ser3"></div>
+        <script>createRowFew("1")</script>
+        <script>createRowFew("2")</script>
+
+        <div id="row3ser3"></div>
+        <script>createRowFew("3")</script>
+
+        <script>createRowFew("4")</script>
+   
+    </section>
+
+    <section class="hero is-light is-small" id="Preliminary" style="text-align: center;">
+        <hr style="border: none; border-top: 3px solid black; width: 100%; margin-top: 20px; margin-bottom: 20px;">
+        <h2 class="title is-3" style="text-align: center;" >Preliminary Analyses</h2>
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Straight Flows Yield Fast Generation</h4>
+        <div id="row0com" style="margin-bottom: 20px;" ></div>
+        <script>createRowFewCom("0")</script>
+        <div id="row1com" style="margin-bottom: 20px;"></div>
+        <script>createRowFewCom("1")</script>
+        <div id="row2com" style="margin-bottom: 20px;"></div>
+        <script>createRowFewCom("2")</script>
+        <div id="row3com" style="margin-bottom: 20px;"></div>
+        <script>createRowFewCom("3")</script>
+        <div id="row4com" style="margin-bottom: 20px;"></div>
+        <script>createRowFewCom("4")</script>
+        <hr style="margin-top: 20px; margin-bottom: 20px;">
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Impact of CFG on Audio Quality</h4>
+        <!-- <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 0: Change Instrument</h4> -->
+        <div id="row0" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRow("0")</script>
+        <!-- <hr style="margin-top: 20px; margin-bottom: 20px;"> -->
+
+
+    </section>
+
+    <section class="hero is-light is-small" id="Ablation" style="text-align: center;">
+        <hr style="border: none; border-top: 3px solid black; width: 100%; margin-top: 20px; margin-bottom: 20px;">
+        <div style="text-align: center;width: 90%;margin-left: auto;margin-right: auto;">
+        
+        <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Ablation Studies</h2>
+        <!--/ Matting. -->
+        <div id="row0ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("0")</script>
+        <div id="row1ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("1")</script>
+        <div id="row2ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("2")</script>
+        <div id="row3ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("3")</script>
+        <div id="row4ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("4")</script>
+        <div id="row5ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("5")</script>
+        <div id="row6ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("6")</script>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div style="min-height:180px;background-color:white;color:black;"><div style="width:60%;font-size:25px;font-weight:bold;padding-top:15px;margin:0 auto;text-align:left;"> BibTex </div><div style="width:60%;margin:0 auto;padding:20px 0;"> If you find our work useful, please cite our paper: </div><div style="width:60%;margin:0 auto;background-color:#f8f8f8;padding:20px;border-radius:5px;position:relative;"><pre id="bibtex" style="font-size:14px;color:black;font-family:Consolas, monospace;white-space:pre-wrap;">@misc{liu2024flashaudiorectifiedflowsfast,
+        title={FlashAudio: Rectified Flows for Fast and High-Fidelity Text-to-Audio Generation}, 
+        author={Huadai Liu and Jialei Wang and Rongjie Huang and Yang Liu and Heng Lu and Wei Xue and Zhou Zhao},
+        year={2024},
+        eprint={2410.12266},
+        archivePrefix={arXiv},
+        primaryClass={eess.AS},
+        url={https://arxiv.org/abs/2410.12266}, 
+  }</pre></div><div style="height:30px;"></div></div>
+  <br>    <br>
+
+
+    <footer class="footer">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        Website adapted from the following <a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script type="text/javascript">
+        var currentMethodList = ['ours', 'plain', 'full', 'aae', 'ip2p', 'p2p'];
+        var currentMethod = "ours";
+
+        function ChangeMethod(idx) {
+            var li_list = document.getElementById("method-view-ul").children;
+            for (i = 0; i < li_list.length; i++) {
+                li_list[i].className = "nav-link";
+            }
+            li_list[idx].className = "nav-link active";
+            currentMethod = currentMethodList[idx];
+
+            var image_livingroom = document.getElementById('image_livingroom');
+            var image_cityscape = document.getElementById('image_cityscape');
+            image_livingroom.src = "./image_assets/footnote/livingroom/livingroom_" + currentMethod + ".jpg";
+            image_cityscape.src = "./image_assets/footnote/cityscape/cityscape_" + currentMethod + ".jpg";
+        }
+
+        function ChangePrompt(idx) {
+            var li_list = document.getElementById("prompt-view-ul").children;
+            for (i = 0; i < li_list.length; i++) {
+                li_list[i].className = "nav-link";
+            }
+            li_list[idx].className = "nav-link active";
+            var div_livingroom = document.getElementById('div_livingroom');
+            var div_cityscape = document.getElementById('div_cityscape');
+            if (idx == 0) {
+                div_livingroom.style.display = "";
+                div_cityscape.style.display = "none";
+            } else {
+                div_livingroom.style.display = "none";
+                div_cityscape.style.display = "";
+            }
+        }
+    </script>
+
+    <script src="./assets/js/juxtapose.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script defer="" src="./assets/js/fontawesome.all.min.js"></script>
+    <script src="./assets/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/bulma-slider.min.js"></script>
+    <script src="./assets/js/magnifier.js"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
