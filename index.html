@@ -91,8 +91,8 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img src="./image_assets/structure.png" width="47%" height: auto;>
-                    <img src="./image_assets/rtf-fad.png" width="20%" class="responsive-image">
+                    <img src="./image_assets/rtf-fad.png" width="40%" height="40%";>
+                    <img src="./image_assets/table1.png" width="60%" height="60%";>
                 </div>
                 <div class="column has-text-centered link-container" id="blocks">
                     <div class="publication-links">
@@ -126,6 +126,8 @@
     <section class="hero is-light is-small" id="TTA" style="text-align: center;">
         <div class="hero-body">
             <div class="container is-max-desktop has-text-centered">
+                <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Abstract</h2>
+
                 <div class="has-text-justified" style="font-size: 20px;">
                     <p>
                         Recent advancements in latent diffusion models (LDMs) have markedly enhanced text-to-audio generation, yet their iterative sampling processes impose substantial computational demands, limiting practical deployment. While recent methods utilizing consistency-based distillation aim to achieve few-step or single-step inference, their one-step performance is constrained by curved trajectories, preventing them from surpassing traditional diffusion models. In this work, we introduce FlashAudio with rectified flows to learn straight flow for fast simulation. To alleviate the inefficient timesteps allocation and suboptimal distribution of noise, FlashAudio optimizes the time distribution of rectified flow with Bifocal Distribution and proposes immiscible flow to minimize the total distance of data-noise pairs in a batch vias assignment. Furthermore, to address the amplified accumulation error caused by the classifier-free guidance (CFG), we propose Anchored Optimization, which refines the guidance scale by anchoring it to a reference trajectory. Experimental results on text-to-audio generation demonstrate that FlashAudio's one-step generation performance surpasses the diffusion-based models with hundreds of sampling steps on audio quality and enables a sampling speed of 400x faster than real-time on a single NVIDIA 4090Ti GPU.
@@ -134,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Performance on text-to-Audio Generation</h2>
+        <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Performance on Text-to-Audio Generation</h2>
         <!--/ Matting. -->
         <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Full-step Comparisons</h4>
         <div id="row1" style="width: 100%;text-align: center;max-width: 100vw;"></div>
